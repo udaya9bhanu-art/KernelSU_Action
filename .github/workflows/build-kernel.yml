@@ -16,7 +16,7 @@ jobs:
       run: |
         CONFIG_ENV=$(grep -w "CONFIG_ENV" config.env | head -n 1 | cut -d "=" -f 2)
         CONFIG_LIST=(
-            KERNEL_SOURCE: https://github.com/MotorolaMobilityLLC/kernel-msm/
+            KERNEL_SOURCE: https://github.com/MotorolaMobilityLLC/kernel-msm/tags/
             KERNEL_SOURCE_BRANCH: MMI-S2RIS32.32-20-9-9-2-3
             KERNEL_CONFIG: hanoip_defconfig
             KERNEL_IMAGE_NAME: Image.gz
